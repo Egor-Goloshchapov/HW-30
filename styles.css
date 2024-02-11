@@ -1,0 +1,48 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    animation-name: moving-box;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    position: relative;
+}
+
+@keyframes moving-box {
+    0% {
+        background-color: red;
+        left: 150px;
+    }
+
+    25% {
+        top: 300px;
+        left: 150px;
+        background-color: darkblue;
+    }
+
+    50% {
+        left: 500px;
+        top: 300px;
+        background-color: chartreuse;
+    }
+
+    75% {
+        top: 50px;
+        left: 500px;
+        background-color: gold;
+    }
+
+    100% {
+        left: 150px;
+        top: 50px;
+        background-color: red;
+    }
+}
